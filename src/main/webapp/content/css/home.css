@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.btn-aanmaken {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #2c3338;
+    transition: 0.85s ease;
+}
+
+.btn-aanmaken:hover {
+    color: #fff;
+    background-color: #43484b;
+}
+
+table tr:hover td {
+    transition: 0.85s ease;
+    background: #2c3338;
+    color: #fff;
+}
+
+table tbody td .btn-actie {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+}
+
+table tbody td .btn-actie:hover {
+    border: 2px solid darkgrey;
+}
+
+table tbody td .btn-actie i {
+    color: #fff;
+}
+
+table tbody td .btn-actie:hover i {
+    color: darkgrey;
+}
+
+@media(max-width: 769px) {
+    table tbody td .btn-actie:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+/* Layout voor modal */
+.generic-modal .modal-content {
+    background-color: #212529;
+}
+
+.generic-modal .modal-content .modal-header {
+    color: #fff;
+}
+
+.generic-modal .modal-content .modal-header button {
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.generic-modal .modal-content .modal-footer button {
+    transition: 0.85s ease;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #2c3338;
+    font-weight: bold;
+}
+
+.generic-modal .modal-content .modal-footer button:hover {
+    background-color: #dcdbdb;
+}
+
+/* Layout modal verwijderen */
+.verwijder-modal .modal-content {
+    background-color: #212529;
+}
+
+.verwijder-modal .modal-content .modal-header {
+    color: #fff;
+}
+
+.verwijder-modal .modal-content .modal-footer .btn-verwijderen {
+    transition: 0.85s ease;
+    width: 175px;
+    border: none;
+    outline: none;
+    background-color: #fff;;
+    color: #2c3338;
+    font-weight: bold;
+}
+
+.verwijder-modal .modal-content .modal-footer .btn-verwijderen:hover {
+    background-color: #f5fff0;
+}
+
+.verwijder-modal .modal-content .modal-footer .btn-annuleren {
+    transition: 0.85s ease;
+    width: 175px;
+    border: none;
+    outline: none;
+    outline: none;
+    background-color: #fff;
+    color: #2c3338;
+    font-weight: bold;
+}
+
+.verwijder-modal .modal-content .modal-footer .btn-annuleren:hover {
+    background-color: #ffebeb;
+}

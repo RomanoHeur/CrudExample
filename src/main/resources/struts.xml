@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" extends="struts-default" namespace="/">
+
+        <action name="">
+            <result type="redirect">home</result>
+        </action>
+
+        <action name="home" class="nl.scalda.controller.HomeAction" method="home">
+            <result name="SUCCESS">/content/home.jsp</result>
+        </action>
+
+        <action name="toevoegen" class="nl.scalda.controller.ToevoegenAction" method="toevoegen">
+            <result type="redirect" name="SUCCESS">home</result>
+        </action>
+
+        <action name="bewerken" class="nl.scalda.controller.BewerkenAction" method="bewerken">
+            <result type="redirect" name="SUCCESS">home</result>
+        </action>
+
+        <action name="verwijderen" class="nl.scalda.controller.VerwijderProductAction" method="verwijderen">
+            <result type="redirect" name="SUCCESS">home</result>
+        </action>
+
+    </package>
+
+</struts>
